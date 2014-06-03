@@ -1,0 +1,28 @@
+1. install these libraries by apt-get install
+	http://www.raben.com/book/export/html/3
+	http://stackoverflow.com/questions/16202156/opencv-2-4-1-undefined-references
+	libcv-dev
+	apt-get install python-matplotlib
+	apt-get build-dep opencv	
+2.
+	Create a temporary directory, which we denote as <cmake_binary_dir>, where you want to put the generated 		Makefiles, project files as well the object files and output binaries.
+
+	Enter the <cmake_binary_dir> and type
+
+	cmake [<some optional parameters>] <path to the OpenCV source directory>
+	For example
+
+	cd ~/opencv
+	mkdir release
+	cd release
+	cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+	Enter the created temporary directory (<cmake_binary_dir>) and proceed with:
+
+	make
+	sudo make install
+	
+3.
+	http://docs.opencv.org/trunk/doc/py_tutorials/py_tutorials.html
+	
+4.	Numpy Examples List
+	http://wiki.scipy.org/Numpy_Example_List
